@@ -1,0 +1,41 @@
+{
+   "expo": {
+      "name": "Sumeet",
+      "slug": "sumeet",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/icon.png",
+      "userInterfaceStyle": "light",
+      "plugins": [
+         "expo-build-properties",
+         [
+            "expo-image-picker",
+            {
+               "photosPermission": "custom photos permission",
+               "cameraPermission": "Allow $(PRODUCT_NAME) to open the camera"
+            }
+         ],
+         "@react-native-google-signin/google-signin"
+      ],
+      "splash": {
+         "image": "./assets/splash.png",
+         "resizeMode": "cover",
+         "backgroundColor": "#402F9E"
+      },
+      "assetBundlePatterns": ["**/*"],
+      "ios": {
+         "supportsTablet": true
+      },
+      "android": {
+         "adaptiveIcon": {
+            "foregroundImage": "./assets/adaptive-icon.png",
+            "backgroundColor": "#ffffff"
+         },
+         "package": "com.sumeet.myapp"
+      },
+      "web": {
+         "favicon": "./assets/favicon.png"
+      },
+      "scheme": "sumeet"
+   }
+}
